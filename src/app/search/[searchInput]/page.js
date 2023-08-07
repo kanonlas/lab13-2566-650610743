@@ -6,7 +6,7 @@ import SearchPage from "../page";
 
 export default function SearchResultPage({ params }) {
   let searchInput = params.searchInput;
-  //tip1 : before filtering movie, replace all "%20" with " " (space) in the input
+  //tip1 : before filtering movie, replace all "%20" with " " (space) in the inputaa
   const processedSearchInput = searchInput.replaceAll("%20", " ").toLowerCase();
 
   const filteredMovies = movieDB.filter((movie) =>
